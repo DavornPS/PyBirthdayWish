@@ -4,7 +4,7 @@ import os,random
 from threading import Thread
 from time import sleep
 
-import vlc
+import playsound
 from termcolor import colored
 
 from config import *
@@ -36,6 +36,7 @@ def replaceMultiple(mainString, toBeReplace, newString):
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
     try:
+        
         # PyInstaller creates a temp folder and stores path in _MEIPASS
         base_path = sys._MEIPASS
     except Exception:
